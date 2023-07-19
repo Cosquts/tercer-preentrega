@@ -1,25 +1,26 @@
 @import "../base/variables";
-.navbar{
-   
-    .header-color{
-        background-color: #E7AB30;
-     
-        a{
-            .img-logo{
-                width: 130px;
-                margin: 5px;
-                border-radius: 35px;
-                box-shadow: $shadow;
-                transition: all 0.03s ease;
-                
-            }
+.navbar {
+  
+  .header-color {
+    background-color: $color-principal;
 
-            .img-logo:active{
-                outline: 1.5px solid rgba(42, 44, 52,0.09);
-                transform: scale(0.98);
-                box-shadow: none;
-            }
-        }
-    
-        }
+    a {
+      font-size: 17px;
+      color: $color-secundario;
+      font-weight: bold;
+      .img-logo {
+        width: 160px;
+        margin: 5px;
+        border-radius: 35px;
+        box-shadow: 0px 0px 14px 1px rgba(42, 44, 52, 0.35);
+        transition: all 0.03s ease;
+      }
+
+      .img-logo:active {
+        outline: 1.5px solid rgba(42, 44, 52, 0.09);
+        transform: scale(0.98);
+        box-shadow: none;
+      }
+    }
+  }
 }

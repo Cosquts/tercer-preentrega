@@ -1,2 +1,9 @@
-@use "componentes/header";
-@use "base/variables"
+@use"componentes/header";
+@use "base/variables";
+@use "componentes/main";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
