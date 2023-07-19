@@ -1,3 +1,4 @@
+@import "../base/variables";
 .navbar{
    
     .header-color{
@@ -8,7 +9,7 @@
                 width: 130px;
                 margin: 5px;
                 border-radius: 35px;
-                box-shadow: 0px 0px 14px 1px rgba(42,44,52,0.35);
+                box-shadow: $shadow;
                 transition: all 0.03s ease;
                 
             }
