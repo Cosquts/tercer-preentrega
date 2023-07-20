@@ -2,10 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Inicio - TurnoLink</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,124 +12,108 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <!-- el header contiene un nav > 3 div (info/logo/botones) -->
-    <header class="header">
-      <nav class="header__nav">
-        <div class="header__nav-container">
-          <ul class="header__nav-list">
-            <li class="header__nav-items">
-              <a class="header__nav-links" href="pages/contacto.html"
-                >Contacto</a
-              >
-            </li>
-            <li class="header__nav-items">
-              <a class="header__nav-links" href="pages/sobrenosotros.html"
-                >Sobre Nosotros</a
-              >
-            </li>
-            <li class="header__nav-items">
-              <a class="header__nav-links" href="index.html">Inicio</a>
-            </li>
-          </ul>
-        </div>
+  <body id="bodyy">
+    <header>
+      <nav class="navbar bg-body-tertiary fixed-top p-0">
+       
 
-        <div class="header__logo">
-          <a class="header__logo-link" href="index.html" class="content-logo"
+        <div class="container-fluid header-color">
+
+            <nav class="nav d-none d-md-flex">
+                
+                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#">Sobre nosotros</a>
+                
+              </nav>
+
+          <a class="navbar-brand" href="#"
             ><img
-              class="header__logo-img"
-              src="img/logo.png"
-              alt="Logo del home"
+              class="img-logo"
+              src="img/logo header turnolink.png"
+              alt="logo de la app"
           /></a>
-        </div>
 
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <button
-              class="btn btn-dark dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            ></button>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <button class="btn btn-success">Iniciar sesión</button>
-              <button class="btn btn-danger">Registrarse</button>
-              <li><a class="dropdown-item" href="#">Contacto</a></li>
-              <li>
-                <a class="dropdown-item" href="pages/sobrenosotros.html"
-                  >Sobre nosotros</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
+          <nav class="nav d-none d-md-flex">
+            
+            <a class="nav-link" href="#">Inicia sesión</a>
+            <a class="nav-link" href="#">Registrate</a>
+           
+          </nav>
 
-        <div class="header__button-container">
-          <a class="header__button-container-link" href="pages/login.html">
-            <button class="header__button-container-click">
-              Iniciar sesión
-            </button>
-          </a>
-          <a href="pages/signup.html">
-            <button class="btn btn-danger btn-outline-light">
-              Registrarse
-            </button>
-          </a>
+          <button
+            class="navbar-toggler d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
+<main>
+  <h1>Pagina con menu de bootrap</h1>
 
-    <main class="home-main">
-      <h1 class="titulo">Lorem ipsum dolor sit amet</h1>
-
-      <div class="lorem-img">
-        <section class="lorem-left">
-          <h2>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro nam
-            quod impedit, facere quae
-          </h2>
-
-          <div class="imagenes-right">
-            <img
-              class="imagen-1"
-              src="img/celular barba.png"
-              alt="Usuario usando su ceular"
-            />
-            <img
-              class="imagen-2"
-              src="img/laptop barba.png"
-              alt="Usuario usando su laptop"
-            />
-          </div>
-
-          <h3>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-            hic voluptatem inventore? Eum rerum velit ipsum hic vero ullam
-            dolores illum modi odio nihil laudantium eaque, est reiciendis qui
-            eos.
-          </h3>
-        </section>
-        <!-- uso un poco de "spanglish" para tratar de no hacer conflicto con las clases de bootrap -->
-        <div class="imagenes-right">
-          <img
-            class="imagen-1"
-            src="img/celular barba.png"
-            alt="Usuario usando su ceular"
-          />
-          <img
-            class="imagen-2"
-            src="img/laptop barba.png"
-            alt="Usuario usando su laptop"
-          />
-        </div>
-      </div>
-    </main>
+</main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
   </body>
-  <footer>
-    <p>Lorem ipsum dolor</p>
-  </footer>
 </html>
